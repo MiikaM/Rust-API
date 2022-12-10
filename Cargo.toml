@@ -1,0 +1,21 @@
+[package]
+name = "rust-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+mongodb = {version = "2.3.0", features = ['tokio-sync']}
+bson = { version = "2.4.0", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
+tokio = "1.23.0"
+chrono = "0.4.23"
+serde = "1.0.149"
+reqwest = "0.11.13"
+uuid = "1.2.2"
+env_logger = "0.10.0"
+log = "^0.4"
+strum_macros = "^0.24"
+strum = {version = "^0.24", features = ["derive"]}
+derive_more = "^0.99"
